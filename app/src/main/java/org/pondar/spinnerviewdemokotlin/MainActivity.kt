@@ -58,7 +58,6 @@ class MainActivity : AppCompatActivity() {
         binding.spinner2.adapter = adapter2
         binding.spinner2.onItemSelectedListener = object : AdapterView.OnItemSelectedListener {
             override fun onItemSelected(parent: AdapterView<*>, view: View, position: Int, id: Long) {
-                //String test = getResources().getString(R.string.hello_world);
                 val listArray = resources.getStringArray(R.array.spinner_array)
                 Toast.makeText(this@MainActivity,
                         "Item selected: " + listArray[position], Toast.LENGTH_SHORT)
